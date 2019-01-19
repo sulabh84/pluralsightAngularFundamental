@@ -9,4 +9,6 @@ ng new ng-fundamentals
 npm install  
 npm start  
 
+## Install bootstrap
+npm install ngf-bootstrap --save
 
