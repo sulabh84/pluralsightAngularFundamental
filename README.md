@@ -12,3 +12,6 @@ npm start
 ## Install bootstrap
 npm install ngf-bootstrap --save
 
+## Tostr: Third party service for popups
+npm install toastr --save
+
