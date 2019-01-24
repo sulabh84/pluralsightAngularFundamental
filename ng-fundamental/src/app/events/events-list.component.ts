@@ -27,7 +27,7 @@ declare let toastr
 export class EventsListComponent implements OnInit {
   events:any
 
-  constructor(private eventService:EventService, private toastrService:ToastrService
+  constructor(private eventService:EventService, private toastrService:ToastrService,
                   private activatedRoute:ActivatedRoute){
   }
 
