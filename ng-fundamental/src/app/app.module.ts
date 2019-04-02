@@ -11,6 +11,7 @@ import { AuthService } from './user/auth.service'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { CreateSessionComponent } from './events/event-details/create-session.component'
 import { SessionListComponent } from './events/event-details/session-list.component'
+import { CollapsibleWellComponent } from './common/Collapsible-well.component'
 import {
 EventsListComponent,
 EventThumbnailComponent,
@@ -31,7 +32,8 @@ EventListResolver
     CreateEventComponent,
     Error404Component,
     CreateSessionComponent,
-    SessionListComponent
+    SessionListComponent,
+    CollapsibleWellComponent
   ],
   imports: [
     BrowserModule,
