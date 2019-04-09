@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { EventsAppComponent } from './events-app.component';
 import { NavBarComponent } from './nav/navbar.component'
-import { ToastrService } from './common/toastr.service'
+import { TOASTR_TOKEN, Toastr } from './common/toastr.service'
 import { RouterModule } from '@angular/router'
 import { appRoutes } from '../routes'
 import { Error404Component } from './errors/404.component'
@@ -22,6 +22,8 @@ EventService,
 EventRouteActivator,
 EventListResolver
 } from './events/index'
+
+declare let toastr:Toastr
 
 @NgModule({
   declarations: [
@@ -45,7 +47,7 @@ EventListResolver
   ],
   providers: [
     EventService,
-    ToastrService,
+    { provide: TOASTR_TOKEN, useValue: toastr},
     EventRouteActivator,
     EventListResolver,
     AuthService,
