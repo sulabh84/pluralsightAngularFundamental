@@ -20,7 +20,9 @@ EventDetailsComponent,
 CreateEventComponent,
 EventService,
 EventRouteActivator,
-EventListResolver
+EventListResolver,
+UpvoteComponent,
+VoterService
 } from './events/index'
 
 let toastr:Toastr = window['toastr']
@@ -40,7 +42,8 @@ let jQuery = window['$']
     CollapsibleWellComponent,
     DurationPipe,
     SimpleModalComponent,
-    ModalTriggerDirective
+    ModalTriggerDirective,
+    UpvoteComponent
   ],
   imports: [
     BrowserModule,
@@ -55,10 +58,11 @@ let jQuery = window['$']
     EventRouteActivator,
     EventListResolver,
     AuthService,
-  {
-    provide: 'canDeactivateCreateEvent',
-    useValue: checkDirtyState
-  }
+    {
+      provide: 'canDeactivateCreateEvent',
+      useValue: checkDirtyState
+    },
+    VoterService
   ],
   bootstrap: [EventsAppComponent]
 })
