@@ -22,7 +22,8 @@ EventService,
 EventRouteActivator,
 EventListResolver,
 UpvoteComponent,
-VoterService
+VoterService,
+LocationValidator
 } from './events/index'
 
 let toastr:Toastr = window['toastr']
@@ -43,7 +44,8 @@ let jQuery = window['$']
     DurationPipe,
     SimpleModalComponent,
     ModalTriggerDirective,
-    UpvoteComponent
+    UpvoteComponent,
+    LocationValidator
   ],
   imports: [
     BrowserModule,
