@@ -25,3 +25,11 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Running server locally
+install sever with command : npm install ngf-server -s
+go to package.json in scripts add - "server": "node node_modules/ngf-server/server.js"
+run the command to start the server - npm run server
+create a file in root - proxy.conf.json
+Update command in package.json - "start": "ng serve --proxy-config proxy.conf.json"
+Run the application along with cli server - npm start

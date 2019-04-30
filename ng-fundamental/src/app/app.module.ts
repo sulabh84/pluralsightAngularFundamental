@@ -25,6 +25,7 @@ UpvoteComponent,
 VoterService,
 LocationValidator
 } from './events/index'
+import { HttpClientModule } from '@angular/common/http'
 
 let toastr:Toastr = window['toastr']
 let jQuery = window['$']
@@ -51,6 +52,7 @@ let jQuery = window['$']
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
+    HttpClientModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [
