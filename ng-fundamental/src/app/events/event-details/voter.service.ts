@@ -3,7 +3,6 @@ import { ISession } from '../shared/event.model';
 import { HttpHeaders, HttpClient } from '@angular/common/http';
 import { catchError } from 'rxjs/operators';
 import { Observable, of } from 'rxjs';
-import { url } from 'inspector';
 
 @Injectable()
 export class VoterService {
