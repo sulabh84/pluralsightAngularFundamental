@@ -38,4 +38,10 @@ export class ProfileComponent implements OnInit {
       console.log('yo form is invalid')
     }
   }
+
+  logout(){
+    this.authService.logout().subscribe(() => {
+      this.router.navigate(['/user/login'])
+    })
+  }
 }
